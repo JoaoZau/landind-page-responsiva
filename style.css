@@ -217,7 +217,7 @@ section h2 {
 }
 
 #contact-form input,
-#contact-form textarea {
+#contact-form .message{
     width: 100%;
     padding: 0.8rem 1rem;
     border: 1px solid var(--border-color);
@@ -228,7 +228,8 @@ section h2 {
 }
 
 #contact-form input:focus,
-#contact-form textarea:focus {
+#contact-form .message:focus
+{
     outline: none;
     border-color: var(--primary-color);
     box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
