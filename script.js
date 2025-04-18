@@ -28,34 +28,15 @@ document.addEventListener('DOMContentLoaded', () => {
     // });
 
     // Contact Form Submission (Placeholder)
-    const contactForm = document.getElementById('contact-form');
-    const formStatus = document.querySelector('.form-status');
-
-    if (contactForm && formStatus) {
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault(); // Previne o envio padrão do formulário
+ // Previne o envio padrão do formulário
 
             // Simulação de envio
-            formStatus.textContent = 'Enviando mensagem...';
-            formStatus.style.color = 'orange';
-
             // Simula uma resposta após um tempo
             setTimeout(() => {
                 // Aqui você integraria com um serviço de envio de email (backend ou serviço como Formspree/Netlify Forms)
-                console.log('Form submitted (simulated)');
-                formStatus.textContent = 'Mensagem enviada com sucesso!';
-                formStatus.style.color = 'green';
-                contactForm.reset(); // Limpa o formulário
+   // Limpa o formulário
 
                 // Limpa a mensagem de status após alguns segundos
-                setTimeout(() => {
-                    formStatus.textContent = '';
-                }, 5000);
-
-            }, 1500); // Simula 1.5 segundos de espera
-        });
-    }
-
      // Active Nav Link Highlighting on Scroll
      const sections = document.querySelectorAll('main section[id]');
      const navLi = document.querySelectorAll('header nav ul li a');
