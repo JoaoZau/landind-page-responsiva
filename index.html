@@ -101,8 +101,12 @@
                 <form id="contact-form" action="https://formsubmit.co/yugennokosei@gmail.com" method="POST">
                     <input type="text" name="name" placeholder="Seu Nome" required>
                     <input type="email" name="email" placeholder="Seu Email" required>
-                    <input type="text" name="name" placeholder="Sua Mensagem" rows="5" class="message" required></textarea>
+                    <textarea name="message" placeholder="Sua Mensagem" rows="5" required></textarea>
                     <button type="submit" class="cta-button">Enviar Mensagem</button>
+                    <input type="hidden" name="_subject" value="Novo Contacto">
+                    <input type="text" name="_honey" style="display:none">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://joaozau.github.io/landind-page-responsiva/">
                 </form>
                  <p class="form-status"></p>
             </div>
